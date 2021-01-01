@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average counter</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        function Average(numbers) {
+             let sum = 0;
+            for (let i = 0; i < numbers.length; i++) {
+               
+                sum = sum + numbers[i];
+            }
+            let averageo = sum / numbers.length;
+            return averageo;
+        }
+
+
+
+        let numbers1 = [];
+        for (let i = 0; i < 5; i++) {
+            numbers1.push(+prompt("Enter value" + (i + 1)));
+        }
+
+
+        var result = Average(numbers1);
+
+
+
+
+
+
+
+
+        document.write(result);
+       
+        console.log(result);
+    </script>
+
+</body>
+
+</html>
